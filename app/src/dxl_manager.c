@@ -156,14 +156,14 @@ int cmdPort(void)
 
 	switch(paramCount)
 	{
-		case 0:
+		case 0:									// list existing ports information.
 			portInfo();
 			return 0;
 
-		case 1:
-			strcpy(tmpPortName,comPortName); // Save old port name
-			tmpPortNum=comPortNum;			 // Save old port no.
-			strcpy(comPortName,paramVal[0]); // Copy new port
+		case 1:									// Open a new port
+			strcpy(tmpPortName,comPortName); 	// Save old port name
+			tmpPortNum=comPortNum;			 	// Save old port no.
+			strcpy(comPortName,paramVal[0]); 	// Copy new port
 			if(portOpen()==0)
 			{
 				portBaud();
@@ -171,12 +171,12 @@ int cmdPort(void)
 			}
 			else
 			{
-				strcpy(comPortName,tmpPortName); // Restore old port name
-				comPortNum=tmpPortNum;			 // Restore old port no.
+				strcpy(comPortName,tmpPortName);// Restore old port name
+				comPortNum=tmpPortNum;			// Restore old port no.
 				portOpen();
 				return -1;
 			}
-		case 2:
+		case 2:									// Open a new port and set its baud rate.
 			return 0;
 
 		default:

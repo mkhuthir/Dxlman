@@ -67,37 +67,37 @@ int cmdHelp(void)
 
 	printf(" DXL Manager Command List\n\n");
 
-	printf(" =============== Common Commands for Dynamixel Protocol 1.0 & 2.0 ================\n");
+	printf(" ==== Common Commands for Dynamixel Protocol 1.0 & 2.0 =====\n");
 
 	printf(" h|?                 :Displays help\n");
 	printf(" info                :Prints utility info.\n");
 	printf(" clear               :Clears screen\n");
 	printf(" exit                :Exits this program\n");
-	printf(" port [Port]         :Displays/Changes current port name to [Port]\n");
-	printf(" baud [BAUD]         :Displays/Changes baudrate to [BAUD]\n");
-	printf(" ping [ID] [ID]...   :Pings multiple [ID]s\n");
-	printf(" scan                :Scans all Dynamixel IDs\n");
+	printf(" port [PName]        :Displays/Changes port name\n");
+	printf(" baud [BAUD]         :Displays/Changes baudrate\n");
+	printf(" ping [ID] [ID]...   :Pings Dynamixel\n");
+	printf(" scan                :Scans all Dynamixel\n");
 	printf(" \n");
 
-	printf(" ====================== Commands for Dynamixel Protocol 1.0 ======================\n");
+	printf(" =========== Commands for Dynamixel Protocol 1.0 ===========\n");
 
-	printf(" wrb1 [ID] [ADR] [B] :Writes byte [VAL] to [ADR] of [ID]\n");
-	printf(" wrw1 [ID] [ADR] [B] :Writes word [VAL] to [ADR] of [ID]\n");
-	printf(" rdb1 [ID] [ADR]     :Reads byte value from [ADR] of [ID]\n");
-	printf(" rdw1 [ID] [ADR]     :Reads word value from [ADR] of [ID]\n");
-	printf(" reset1 [ID]         :Factory resets the Dynamixel of [ID]\n");
+	printf(" wrb1 [ID] [ADR] [B] :Writes byte\n");
+	printf(" wrw1 [ID] [ADR] [B] :Writes word\n");
+	printf(" rdb1 [ID] [ADR]     :Reads byte\n");
+	printf(" rdw1 [ID] [ADR]     :Reads word\n");
+	printf(" reset1 [ID]         :Factory resets Dynamixel\n");
 	printf(" \n");
 
-	printf(" ====================== Commands for Dynamixel Protocol 2.0 ======================\n");
+	printf(" ============ Commands for Dynamixel Protocol 2.0 ==========\n");
 
-	printf(" wrb2 [ID] [ADR] [B] :Writes byte [B] to [ADR] of [ID]\n");
-	printf(" wrw2 [ID] [ADR] [W] :Writes word [W] to [ADR] of [ID]\n");
-	printf(" wrd2 [ID] [ADR] [D] :Writes dword [D] to [ADR] of [ID]\n");
-	printf(" rdb2 [ID] [ADR]     :Reads byte value from [ADR] of [ID]\n");
-	printf(" rdw2 [ID] [ADR]     :Reads word value from [ADR] of [ID]\n");
-	printf(" rdd2 [ID] [ADR]     :Reads dword value from [ADR] of [ID]\n");
-	printf(" reset2 [ID]         :Factory resets the Dynamixel of [ID]\n");
-	printf(" reboot2 [ID]        :reboots the Dynamixel of [ID]\n");
+	printf(" wrb2 [ID] [ADR] [B] :Writes byte\n");
+	printf(" wrw2 [ID] [ADR] [W] :Writes word\n");
+	printf(" wrd2 [ID] [ADR] [D] :Writes double word\n");
+	printf(" rdb2 [ID] [ADR]     :Reads byte\n");
+	printf(" rdw2 [ID] [ADR]     :Reads word\n");
+	printf(" rdd2 [ID] [ADR]     :Reads double word\n");
+	printf(" reset2 [ID]         :Factory resets Dynamixel\n");
+	printf(" reboot2 [ID]        :reboots Dynamixel\n");
 
 	printf("\n");
 

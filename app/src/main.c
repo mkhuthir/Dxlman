@@ -34,19 +34,22 @@ int main(int argc, char *argv[])
 		else if (strcmp(cmd,"port")==0) cmdPort();
 		else if (strcmp(cmd,"ping")==0) cmdPing();
 		else if (strcmp(cmd,"scan")==0) cmdScan();
-		else if (strcmp(cmd,"wrb1")==0) cmdWrB1();
-		else if (strcmp(cmd,"wrb2")==0) cmdWrB2();
-		else if (strcmp(cmd,"wrw1")==0) cmdWrW1();
-		else if (strcmp(cmd,"wrw2")==0) cmdWrW2();
-		else if (strcmp(cmd,"wrd2")==0) cmdWrD2();
-		else if (strcmp(cmd,"rdb1")==0) cmdRdB1();
-		else if (strcmp(cmd,"rdb2")==0) cmdRdB2();
-		else if (strcmp(cmd,"rdw1")==0) cmdRdW1();
-		else if (strcmp(cmd,"rdw2")==0) cmdRdW2();
-		else if (strcmp(cmd,"rdd2")==0) cmdRdD2();
+
+		else if (strcmp(cmd,"wb1")==0) cmdWrB1();
+		else if (strcmp(cmd,"wb2")==0) cmdWrB2();
+		else if (strcmp(cmd,"ww1")==0) cmdWrW1();
+		else if (strcmp(cmd,"ww2")==0) cmdWrW2();
+		else if (strcmp(cmd,"wd2")==0) cmdWrD2();
+		else if (strcmp(cmd,"rb1")==0) cmdRdB1();
+		else if (strcmp(cmd,"rb2")==0) cmdRdB2();
+		else if (strcmp(cmd,"rw1")==0) cmdRdW1();
+		else if (strcmp(cmd,"rw2")==0) cmdRdW2();
+		else if (strcmp(cmd,"rd2")==0) cmdRdD2();
+
 		else if (strcmp(cmd,"rbt2")==0) cmdReboot2();
 		else if (strcmp(cmd,"rst1")==0) cmdReset1();
 		else if (strcmp(cmd,"rst2")==0) cmdReset2();
+
 		else if (strcmp(cmd,"exit")==0) cmdExit();
 		else cmdBad();
 	}

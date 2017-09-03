@@ -69,35 +69,35 @@ int cmdHelp(void)
 
 	printf(" ==== Common Commands for Dynamixel Protocol 1.0 & 2.0 =====\n");
 
-	printf(" h|?                 :Displays help\n");
-	printf(" info                :Prints utility info.\n");
-	printf(" clear               :Clears screen\n");
-	printf(" exit                :Exits this program\n");
-	printf(" port [PName]        :Displays/Changes port name\n");
-	printf(" baud [BAUD]         :Displays/Changes baudrate\n");
-	printf(" ping [ID] [ID]...   :Pings Dynamixel\n");
-	printf(" scan                :Scans all Dynamixel\n");
+	printf(" h|?                :Displays help\n");
+	printf(" info               :Prints utility info.\n");
+	printf(" clear              :Clears screen\n");
+	printf(" exit               :Exits this program\n");
+	printf(" port [PName]       :Displays/Changes port name\n");
+	printf(" baud [BAUD]        :Displays/Changes baudrate\n");
+	printf(" ping [ID] [ID]...  :Pings Dynamixel\n");
+	printf(" scan               :Scans all Dynamixel\n");
 	printf(" \n");
 
 	printf(" =========== Commands for Dynamixel Protocol 1.0 ===========\n");
 
-	printf(" wrb1 [ID] [ADR] [B] :Writes byte\n");
-	printf(" wrw1 [ID] [ADR] [B] :Writes word\n");
-	printf(" rdb1 [ID] [ADR]     :Reads byte\n");
-	printf(" rdw1 [ID] [ADR]     :Reads word\n");
-	printf(" rst1 [ID]           :Factory resets Dynamixel\n");
+	printf(" wb1 [ID] [ADR] [B] :Writes byte\n");
+	printf(" ww1 [ID] [ADR] [B] :Writes word\n");
+	printf(" rb1 [ID] [ADR]     :Reads byte\n");
+	printf(" rw1 [ID] [ADR]     :Reads word\n");
+	printf(" rst1 [ID]          :Factory resets Dynamixel\n");
 	printf(" \n");
 
 	printf(" ============ Commands for Dynamixel Protocol 2.0 ==========\n");
 
-	printf(" wrb2 [ID] [ADR] [B] :Writes byte\n");
-	printf(" wrw2 [ID] [ADR] [W] :Writes word\n");
-	printf(" wrd2 [ID] [ADR] [D] :Writes double word\n");
-	printf(" rdb2 [ID] [ADR]     :Reads byte\n");
-	printf(" rdw2 [ID] [ADR]     :Reads word\n");
-	printf(" rdd2 [ID] [ADR]     :Reads double word\n");
-	printf(" rst2 [ID]           :Factory resets Dynamixel\n");
-	printf(" rbt2 [ID]           :Reboots Dynamixel\n");
+	printf(" wb2 [ID] [ADR] [B] :Writes byte\n");
+	printf(" ww2 [ID] [ADR] [W] :Writes word\n");
+	printf(" wd2 [ID] [ADR] [D] :Writes double word\n");
+	printf(" rb2 [ID] [ADR]     :Reads byte\n");
+	printf(" rw2 [ID] [ADR]     :Reads word\n");
+	printf(" rd2 [ID] [ADR]     :Reads double word\n");
+	printf(" rst2 [ID]          :Factory resets Dynamixel\n");
+	printf(" rbt2 [ID]          :Reboots Dynamixel\n");
 
 	printf("\n");
 

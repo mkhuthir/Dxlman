@@ -85,7 +85,7 @@ int cmdHelp(void)
 	printf(" wrw1 [ID] [ADR] [B] :Writes word\n");
 	printf(" rdb1 [ID] [ADR]     :Reads byte\n");
 	printf(" rdw1 [ID] [ADR]     :Reads word\n");
-	printf(" reset1 [ID]         :Factory resets Dynamixel\n");
+	printf(" rst1 [ID]           :Factory resets Dynamixel\n");
 	printf(" \n");
 
 	printf(" ============ Commands for Dynamixel Protocol 2.0 ==========\n");
@@ -96,8 +96,8 @@ int cmdHelp(void)
 	printf(" rdb2 [ID] [ADR]     :Reads byte\n");
 	printf(" rdw2 [ID] [ADR]     :Reads word\n");
 	printf(" rdd2 [ID] [ADR]     :Reads double word\n");
-	printf(" reset2 [ID]         :Factory resets Dynamixel\n");
-	printf(" reboot2 [ID]        :reboots Dynamixel\n");
+	printf(" rst2 [ID]           :Factory resets Dynamixel\n");
+	printf(" rbt2 [ID]           :Reboots Dynamixel\n");
 
 	printf("\n");
 
